@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+* 			{margin:0; padding:0; box-sizing: border-box;}
+	html,body	{font:12pt/180% "나눔고딕";}
+
+	#layout 	{max-width:1000px; margin:auto;}
+	
+	header		{padding: 30pt; background:orange; text-align:center;}
+	h1 a			{color:black; text-decoration:none;}
+	nav				{margin:10pt;}
+	
+	ul			{
+				list-style:none;
+				display:flex;
+	}	
+	li		 	{
+				flex:1;
+				padding:10pt; 
+				text-align:center;
+				border-bottom: 1px dashed gray;				
+	}
+	li a 		{
+				display:block; font-size:1.1rem; 
+				font-weight:bold; color:#555;
+				text-decoration:none;
+				transition:0.5s;
+	}
+	li a:hover, a.active	{
+				transform:scale(1.5);
+				color:tomato;
+	}	
+
+	main 		{padding:0pt; margin:20pt 0; overflow:hidden;}
+	
+	main>h2     {
+				padding-top:10px;
+				padding-bottom:5pt;			
+				
+	}	
+	
+	main>p		{padding:20px 0;}
+	
+	main>img	{
+				width:100%; display:block; 
+				margin:auto; margin-top:10px;
+				border-radius:20px;
+				transition:0.5s;				
+	}
+	main>img:hover {
+				transform:rotate(-20deg);
+				filter:sepia(100%);
+	}
