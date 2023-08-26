@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	
+			let act;
 			let aa;
 			//aa = $(this).window().location.href;
 			console.log(this.location.href);
