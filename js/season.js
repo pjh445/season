@@ -4,6 +4,12 @@ $(document).ready(function(){
 			//aa = $(this).window().location.href;
 			console.log(this.location.href);
 			//$(location).attr('href',url);
+			
+			let href = this.location.href;
+			if(href.substr(-1) == 0) {
+					$("nav li").eq(0).children().addClass("active");
+			}
+			
 			$("nav li").eq(act).children().addClass("active");
 			
 			
