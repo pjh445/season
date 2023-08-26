@@ -1,8 +1,9 @@
 $(document).ready(function(){
 	
 			let aa;
-			aa = $(this).window().location.href;
-			console.log(location.href);
+			//aa = $(this).window().location.href;
+			console.log(this.location.href);
+			/$(location).attr('href',url);
 			$("nav li").eq(act).children().addClass("active");
 			
 			
